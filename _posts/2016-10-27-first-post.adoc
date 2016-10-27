@@ -1,4 +1,11 @@
-# init
-This is first post of My blog
+= WGA
+:hp-tags: HubPress, Blog, Open Source,
+:hp-alt-title: first post
+[[img]]
+.View of the Cappella di San Giacomo
+image::http://www.wga.hu/art/a/avanzi/santo.jpg[santo, 300, 200]
 
+The frescoes in the Cappella di San Giacomo (Chapel of St James) were commissioned by Bonifacio Lupi di Soragno and his wife, Caterina dei Franceschi. The architecture, designed by the Venetian sculptor and architect Andriolo de' Santi was commissioned in 1372.
+
+The painting school of Padua can be ranked as the most vigorous of the northern Italian schools: the painters of Padua built upon Giotto's achievements. The prolific Paduan fresco painters added striking naturalistic observations of their own in landscape, in the painting of animals, and in portraiture. The most successful painters of the period came to Padua from outside - Jacopo Avanzi from Bologna and Altichiero da Zevio from Verona. In the Chapel of St James, to Avanzi have been attributed most of the lunettes of the Life of St James, painted about 1374, while to Altichiero has been assigned the huge Crucifixion and some of the other lunettes.
 
