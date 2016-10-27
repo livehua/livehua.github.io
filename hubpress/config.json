@@ -4,7 +4,11 @@
     "repositoryName": "livehua.github.io",
     "branch": "master"
   },
+  "site": {
+    "title": ""
+  },
+  "socialnetwork": {},
   "theme": {
-    "name": "Casper"
+    "name": "casper"
   }
 }
