@@ -5,7 +5,9 @@
     "branch": "master"
   },
   "site": {
-    "title": ""
+    "title": "Minutes to midnight",
+    "description": "ML/DL/Data/Finance",
+    "postsPerPage": "10"
   },
   "socialnetwork": {},
   "theme": {
