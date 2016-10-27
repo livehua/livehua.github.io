@@ -5,8 +5,8 @@
     "branch": "master"
   },
   "site": {
-    "title": "Minutes to midnight",
-    "description": "ML/DL/Data/Finance",
+    "title": "Thoughts Equity",
+    "description": "",
     "postsPerPage": "10",
     "disqus": "lhuadev"
   },
