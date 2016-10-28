@@ -10,7 +10,11 @@
     "postsPerPage": "10",
     "disqus": ""
   },
-  "socialnetwork": {},
+  "socialnetwork": {
+    "email": "hualiang@live.cn",
+    "facebook": "hua.william",
+    "github": "livehua"
+  },
   "theme": {
     "name": "ichi"
   }
