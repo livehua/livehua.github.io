@@ -1,12 +1,32 @@
-= Useful Art Resources
+= Useful Art No-commerce Resources
 :hp-image: http://www.wga.hu/support/title/title.gif
 :hp-tags: art, link
 :hp-alt-title: first post
 
-[[img-wga]]
-.Web Gallery of Art
+* Web Gallery of Art : http://wga.hu
++
 image::http://www.wga.hu/support/title/title.gif[wga, 600, 100]
++
+** Introduction from website
++
+NOTE: __The Web Gallery of Art is a searchable database of European fine arts and architecture (8th-19th centuries), currently containing over 41.100 reproductions. Artist biographies, commentaries, guided tours, period music, catalogue, free postcard and mobile services are provided.__
 
-The Web Gallery of Art is a searchable database of European fine arts and architecture (8th-19th centuries), currently containing over 41.100 reproductions. Artist biographies, commentaries, guided tours, period music, catalogue, free postcard and mobile services are provided.
+* Wikiart : http://wikiart.org
++
+** Introduction from website
++
+NOTE: __Our primary goal is to make world’s art accessible to anyone and anywhere. WikiArt already features some 150.000 artworks by 2.500 artists, localized on 5 languages. These artworks are in museums, universities, town halls, and other civic buildings of more than 70 countries. Most of this art is not on public view. With your active involvement, we are planning to cover the entire art history of the Earth – from cave artworks to modern private collections. We also provide you with tools for translation on as many languages as needed.__
+
+
+* art cyclopedia(search): http://www.artcyclopedia.com/
++
+image::http://www.artcyclopedia.com/images/artcyclopedia.gif[ac, 400, 100]
++
+** Introduction from website
++
+NOTE: __Images displayed as part of our feature articles would normally come from a museum's press kit for an exhibition and would be displayed with permission.The pop-up images displayed on individual artist pages normally depict works which are in the public domain (for example, works created before 1923 are in the public domain almost everywhere in the world). Or, in some cases, the artist or representative has explicitly granted permission. The photographs themselves are used by permission, either explicitly or in accordance with a website's terms of use.__
+
+
+
 
 
