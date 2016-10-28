@@ -1,4 +1,5 @@
 = Useful Art Resources
+:hp-image: http://www.wga.hu/support/title/title.gif
 :hp-tags: art, link
 :hp-alt-title: first post
 
