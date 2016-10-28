@@ -26,6 +26,14 @@ image::http://www.artcyclopedia.com/images/artcyclopedia.gif[ac, 400, 100]
 +
 NOTE: __Images displayed as part of our feature articles would normally come from a museum's press kit for an exhibition and would be displayed with permission.The pop-up images displayed on individual artist pages normally depict works which are in the public domain (for example, works created before 1923 are in the public domain almost everywhere in the world). Or, in some cases, the artist or representative has explicitly granted permission. The photographs themselves are used by permission, either explicitly or in accordance with a website's terms of use.__
 
+* Find art info: http://www.findartinfo.com/
++
+image::http://www.findartinfo.com/Content/Images/bigbannerbg.gif[fai, 300, 100]
++
+** Introduction from website
++
+NOTE: __438,006 artists, 3,775,774 art prices, 369,596 signatures, 2,269,627 photos of artwork. FindArtInfo.com contains price information on all kinds of fine art, oil paintings, etchings, engravings, watercolors, drawings, sculptures and much more ranging from Old Masters to Contemporary Art.__
+
 
 
 
