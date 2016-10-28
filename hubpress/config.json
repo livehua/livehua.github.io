@@ -6,9 +6,9 @@
   },
   "site": {
     "title": "Thoughts Equity",
-    "description": "",
+    "description": "the thoughs that have values",
     "postsPerPage": "10",
-    "disqus": "lhuadev"
+    "disqus": ""
   },
   "socialnetwork": {},
   "theme": {
