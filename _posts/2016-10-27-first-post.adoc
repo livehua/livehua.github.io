@@ -7,13 +7,9 @@
 +
 image::http://www.wga.hu/support/title/title.gif[wga, 600, 100]
 +
-** Introduction from website
-+
 NOTE: __The Web Gallery of Art is a searchable database of European fine arts and architecture (8th-19th centuries), currently containing over 41.100 reproductions. Artist biographies, commentaries, guided tours, period music, catalogue, free postcard and mobile services are provided.__
 
 * Wikiart : http://wikiart.org
-+
-** Introduction from website
 +
 NOTE: __Our primary goal is to make world’s art accessible to anyone and anywhere. WikiArt already features some 150.000 artworks by 2.500 artists, localized on 5 languages. These artworks are in museums, universities, town halls, and other civic buildings of more than 70 countries. Most of this art is not on public view. With your active involvement, we are planning to cover the entire art history of the Earth – from cave artworks to modern private collections. We also provide you with tools for translation on as many languages as needed.__
 
@@ -22,15 +18,11 @@ NOTE: __Our primary goal is to make world’s art accessible to anyone and anywh
 +
 image::http://www.artcyclopedia.com/images/artcyclopedia.gif[ac, 400, 100]
 +
-** Introduction from website
-+
 NOTE: __Images displayed as part of our feature articles would normally come from a museum's press kit for an exhibition and would be displayed with permission.The pop-up images displayed on individual artist pages normally depict works which are in the public domain (for example, works created before 1923 are in the public domain almost everywhere in the world). Or, in some cases, the artist or representative has explicitly granted permission. The photographs themselves are used by permission, either explicitly or in accordance with a website's terms of use.__
 
 * Find art info: http://www.findartinfo.com/
 +
 image::http://www.findartinfo.com/Content/Images/bigbannerbg.gif[fai, 300, 100]
-+
-** Introduction from website
 +
 NOTE: __438,006 artists, 3,775,774 art prices, 369,596 signatures, 2,269,627 photos of artwork. FindArtInfo.com contains price information on all kinds of fine art, oil paintings, etchings, engravings, watercolors, drawings, sculptures and much more ranging from Old Masters to Contemporary Art.__
 
