@@ -1,9 +1,80 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Thoughts Equity]]></title><description><![CDATA[thoughs have values]]></description><link>https://livehua.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 28 Oct 2016 01:24:51 GMT</lastBuildDate><atom:link href="https://livehua.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Useful Art Resources]]></title><description><![CDATA[<div id="img-wga" class="imageblock">
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Thoughts Equity]]></title><description><![CDATA[thoughs have values]]></description><link>https://livehua.github.io</link><generator>RSS for Node</generator><lastBuildDate>Fri, 28 Oct 2016 01:52:48 GMT</lastBuildDate><atom:link href="https://livehua.github.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Useful Art No-commerce Resources]]></title><description><![CDATA[<div class="ulist">
+<ul>
+<li>
+<p>Web Gallery of Art : <a href="http://wga.hu" class="bare">http://wga.hu</a></p>
+<div class="imageblock">
 <div class="content">
 <img src="http://www.wga.hu/support/title/title.gif" alt="wga" width="600" height="100">
 </div>
-<div class="title">Figure 1. Web Gallery of Art</div>
 </div>
-<div class="paragraph">
-<p>The Web Gallery of Art is a searchable database of European fine arts and architecture (8th-19th centuries), currently containing over 41.100 reproductions. Artist biographies, commentaries, guided tours, period music, catalogue, free postcard and mobile services are provided.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Introduction from website</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<em>The Web Gallery of Art is a searchable database of European fine arts and architecture (8th-19th centuries), currently containing over 41.100 reproductions. Artist biographies, commentaries, guided tours, period music, catalogue, free postcard and mobile services are provided.</em>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Wikiart : <a href="http://wikiart.org" class="bare">http://wikiart.org</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Introduction from website</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<em>Our primary goal is to make world’s art accessible to anyone and anywhere. WikiArt already features some 150.000 artworks by 2.500 artists, localized on 5 languages. These artworks are in museums, universities, town halls, and other civic buildings of more than 70 countries. Most of this art is not on public view. With your active involvement, we are planning to cover the entire art history of the Earth – from cave artworks to modern private collections. We also provide you with tools for translation on as many languages as needed.</em>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>art cyclopedia(search): <a href="http://www.artcyclopedia.com/" class="bare">http://www.artcyclopedia.com/</a></p>
+<div class="imageblock">
+<div class="content">
+<img src="http://www.artcyclopedia.com/images/artcyclopedia.gif" alt="ac" width="400" height="100">
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Introduction from website</p>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+<em>Images displayed as part of our feature articles would normally come from a museum&#8217;s press kit for an exhibition and would be displayed with permission.The pop-up images displayed on individual artist pages normally depict works which are in the public domain (for example, works created before 1923 are in the public domain almost everywhere in the world). Or, in some cases, the artist or representative has explicitly granted permission. The photographs themselves are used by permission, either explicitly or in accordance with a website&#8217;s terms of use.</em>
+</td>
+</tr>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>]]></description><link>https://livehua.github.io/2016/10/27/first-post.html</link><guid isPermaLink="true">https://livehua.github.io/2016/10/27/first-post.html</guid><category><![CDATA[art]]></category><category><![CDATA[ link]]></category><dc:creator><![CDATA[Liang]]></dc:creator><pubDate>Thu, 27 Oct 2016 00:00:00 GMT</pubDate></item></channel></rss>
