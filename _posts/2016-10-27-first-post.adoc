@@ -4,7 +4,7 @@
 
 [[img-wga]]
 .Web Gallery of Art
-image::http://www.wga.hu/support/title/title.gif[wga, 100, 100]
+image::http://www.wga.hu/support/title/title.gif[wga, 600, 100]
 
 The Web Gallery of Art is a searchable database of European fine arts and architecture (8th-19th centuries), currently containing over 41.100 reproductions. Artist biographies, commentaries, guided tours, period music, catalogue, free postcard and mobile services are provided.
 
