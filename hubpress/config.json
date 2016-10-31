@@ -2,13 +2,14 @@
   "meta": {
     "username": "livehua",
     "repositoryName": "livehua.github.io",
-    "branch": "master"
+    "branch": "master",
+    "delay": ""
   },
   "site": {
     "title": "Thoughts Equity",
     "description": "minutes to midnight",
     "postsPerPage": "10",
-    "disqus": ""
+    "disqus": "lhuadev"
   },
   "socialnetwork": {
     "email": "hualiang@live.cn",
