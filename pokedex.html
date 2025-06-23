@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>宝可梦图鉴大全</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: radial-gradient(circle at top left, #ffcb05, #3b4cca);
+            color: #222;
+            font-family: 'Press Start 2P', cursive;
+            margin: 0;
+            text-align: center;
+        }
+        header {
+            background-color: #ee1515;
+            color: #fff;
+            padding: 20px;
+        }
+        a {
+            color: #ffcb05;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .pokemon-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .pokemon-card {
+            background: rgba(255,255,255,0.9);
+            border: 3px solid #3b4cca;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            width: 250px;
+        }
+        .pokemon-card img {
+            width: 150px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>宝可梦图鉴大全</h1>
+    </header>
+    <main>
+        <div class="pokemon-grid">
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
+                <p>001 妙蛙种子</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
+                <p>004 小火龙</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
+                <p>007 杰尼龟</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
