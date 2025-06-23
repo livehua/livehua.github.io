@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #33FF33;
+            font-family: "Courier New", Courier, monospace;
+            margin: 0;
+            display: flex;
+        }
+        #sidebar {
+            width: 250px;
+            border-right: 1px solid #333;
+            padding: 20px;
+        }
+        #content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        a {
+            color: #00FF99;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div id="sidebar">
+        <h2>文章列表</h2>
+        <ul id="post-list"></ul>
+    </div>
+    <div id="content">
+        <h2 id="post-title"></h2>
+        <div id="post-content"></div>
+    </div>
+<script>
+fetch('blog/blog-index.json')
+  .then(response => response.json())
+  .then(posts => {
+    const list = document.getElementById('post-list');
+    posts.forEach(post => {
+      const li = document.createElement('li');
+      const link = document.createElement('a');
+      link.textContent = post.title;
+      link.href = '#';
+      link.onclick = (e) => {
+        e.preventDefault();
+        loadPost(post);
+      };
+      li.appendChild(link);
+      list.appendChild(li);
+    });
+    if (posts[0]) loadPost(posts[0]);
+  });
+
+function loadPost(post) {
+  document.getElementById('post-title').textContent = post.title;
+  fetch('blog/' + post.path)
+    .then(res => res.text())
+    .then(text => {
+      document.getElementById('post-content').innerHTML = marked.parse(text);
+    });
+}
+</script>
+</body>
+</html>
