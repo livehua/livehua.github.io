@@ -37,9 +37,26 @@
             margin: 10px;
             padding: 20px;
             width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .pokemon-card:hover {
+            transform: scale(1.05);
         }
         .pokemon-card img {
-            width: 150px;
+            width: 120px;
+        }
+        .pokemon-card h3 {
+            margin: 10px 0 5px;
+        }
+        .pokemon-card p {
+            margin: 5px 0;
+            font-size: 14px;
+        }
+        footer {
+            background-color: #ee1515;
+            color: #fff;
+            padding: 10px;
         }
     </style>
 </head>
@@ -50,18 +67,610 @@
     <main>
         <div class="pokemon-grid">
             <div class="pokemon-card">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
-                <p>001 妙蛙种子</p>
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="妙蛙种子">
+                <h3>001 妙蛙种子</h3>
+                <p><strong>技能:</strong> 藤鞭、寄生种子</p>
+                <p><strong>特点:</strong> 背上的种子吸收阳光后会逐渐成长。</p>
             </div>
             <div class="pokemon-card">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
-                <p>004 小火龙</p>
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/002.png" alt="妙蛙草">
+                <h3>002 妙蛙草</h3>
+                <p><strong>技能:</strong> 藤鞭、花粉</p>
+                <p><strong>特点:</strong> 花苞因储存了能量而膨胀。</p>
             </div>
             <div class="pokemon-card">
-                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
-                <p>007 杰尼龟</p>
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/003.png" alt="妙蛙花">
+                <h3>003 妙蛙花</h3>
+                <p><strong>技能:</strong> 日光束、花瓣舞</p>
+                <p><strong>特点:</strong> 能操纵自然力量的草系首领。</p>
             </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="小火龙">
+                <h3>004 小火龙</h3>
+                <p><strong>技能:</strong> 火花、抓</p>
+                <p><strong>特点:</strong> 尾巴的火焰代表着生命力。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png" alt="火恐龙">
+                <h3>005 火恐龙</h3>
+                <p><strong>技能:</strong> 火焰旋涡、利爪</p>
+                <p><strong>特点:</strong> 性格暴躁，火焰更加旺盛。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/006.png" alt="喷火龙">
+                <h3>006 喷火龙</h3>
+                <p><strong>技能:</strong> 大字爆炎、龙爪</p>
+                <p><strong>特点:</strong> 能在空中自由翱翔的火龙。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="杰尼龟">
+                <h3>007 杰尼龟</h3>
+                <p><strong>技能:</strong> 水枪、缩入壳中</p>
+                <p><strong>特点:</strong> 遇到危险时会把头缩进壳里。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/008.png" alt="卡咪龟">
+                <h3>008 卡咪龟</h3>
+                <p><strong>技能:</strong> 泡沫光线、咬住</p>
+                <p><strong>特点:</strong> 尾巴上的毛发象征长寿。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/009.png" alt="水箭龟">
+                <h3>009 水箭龟</h3>
+                <p><strong>技能:</strong> 加农水炮、铁壁</p>
+                <p><strong>特点:</strong> 背上的大炮能高速喷射水流。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/010.png" alt="绿毛虫">
+                <h3>010 绿毛虫</h3>
+                <p><strong>技能:</strong> 吐丝、虫咬</p>
+                <p><strong>特点:</strong> 身体柔软，吐出的丝能缠住敌人。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/011.png" alt="铁甲蛹">
+                <h3>011 铁甲蛹</h3>
+                <p><strong>技能:</strong> 硬化、撞击</p>
+                <p><strong>特点:</strong> 在坚硬的壳里静静等待进化。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/012.png" alt="巴大蝶">
+                <h3>012 巴大蝶</h3>
+                <p><strong>技能:</strong> 银色旋风、催眠粉</p>
+                <p><strong>特点:</strong> 翅膀上的鳞粉具有驱虫效果。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/013.png" alt="独角虫">
+                <h3>013 独角虫</h3>
+                <p><strong>技能:</strong> 毒针、虫咬</p>
+                <p><strong>特点:</strong> 头上的针带有毒性。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/014.png" alt="铁壳蛹">
+                <h3>014 铁壳蛹</h3>
+                <p><strong>技能:</strong> 硬化、毒针</p>
+                <p><strong>特点:</strong> 守株待兔的毒系蛹。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/015.png" alt="大针蜂">
+                <h3>015 大针蜂</h3>
+                <p><strong>技能:</strong> 连续双针、毒击</p>
+                <p><strong>特点:</strong> 手臂上的毒针是其武器。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/016.png" alt="波波">
+                <h3>016 波波</h3>
+                <p><strong>技能:</strong> 起风、啄</p>
+                <p><strong>特点:</strong> 以飞行速度快闻名的小鸟。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/017.png" alt="比比鸟">
+                <h3>017 比比鸟</h3>
+                <p><strong>技能:</strong> 旋风、燕返</p>
+                <p><strong>特点:</strong> 翅膀力量加强，能长时间飞行。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/018.png" alt="大比鸟">
+                <h3>018 大比鸟</h3>
+                <p><strong>技能:</strong> 空气斩、神速</p>
+                <p><strong>特点:</strong> 飞翔速度能超过每小时两百公里。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/019.png" alt="小拉达">
+                <h3>019 小拉达</h3>
+                <p><strong>技能:</strong> 咬住、突袭</p>
+                <p><strong>特点:</strong> 喜欢啃咬东西的鼠类宝可梦。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/020.png" alt="拉达">
+                <h3>020 拉达</h3>
+                <p><strong>技能:</strong> 超级牙、突进</p>
+                <p><strong>特点:</strong> 牙齿会不停生长，需要啃东西磨短。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/021.png" alt="烈雀">
+                <h3>021 烈雀</h3>
+                <p><strong>技能:</strong> 啄、乱击</p>
+                <p><strong>特点:</strong> 虽小但性格凶猛的鸟宝可梦。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/022.png" alt="大嘴雀">
+                <h3>022 大嘴雀</h3>
+                <p><strong>技能:</strong> 啄钻、翅膀攻击</p>
+                <p><strong>特点:</strong> 长嘴能精准啄中目标。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/023.png" alt="阿柏蛇">
+                <h3>023 阿柏蛇</h3>
+                <p><strong>技能:</strong> 缠绕、毒尾</p>
+                <p><strong>特点:</strong> 身体上的花纹能吓退敌人。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/024.png" alt="阿柏怪">
+                <h3>024 阿柏怪</h3>
+                <p><strong>技能:</strong> 咬碎、喷射酸液</p>
+                <p><strong>特点:</strong> 会张开颚部恐吓对手。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="皮卡丘">
+                <h3>025 皮卡丘</h3>
+                <p><strong>技能:</strong> 电击、十万伏特</p>
+                <p><strong>特点:</strong> 颊囊储存电力，释放电击。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/026.png" alt="雷丘">
+                <h3>026 雷丘</h3>
+                <p><strong>技能:</strong> 雷电、电球</p>
+                <p><strong>特点:</strong> 尾巴插入地面可释放电力。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/027.png" alt="穿山鼠">
+                <h3>027 穿山鼠</h3>
+                <p><strong>技能:</strong> 高速旋转、抓</p>
+                <p><strong>特点:</strong> 身体干燥，擅长挖洞。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/028.png" alt="穿山王">
+                <h3>028 穿山王</h3>
+                <p><strong>技能:</strong> 地球上投、连斩</p>
+                <p><strong>特点:</strong> 坚硬的鳞片能抵挡攻击。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/029.png" alt="尼多兰♀">
+                <h3>029 尼多兰♀</h3>
+                <p><strong>技能:</strong> 毒针、咬住</p>
+                <p><strong>特点:</strong> 雌性特有的温顺性格。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/030.png" alt="尼多娜">
+                <h3>030 尼多娜</h3>
+                <p><strong>技能:</strong> 岩崩、毒尾</p>
+                <p><strong>特点:</strong> 战斗时会竖起耳朵观察四周。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/031.png" alt="尼多后">
+                <h3>031 尼多后</h3>
+                <p><strong>技能:</strong> 地震、双重踢</p>
+                <p><strong>特点:</strong> 拥有保护幼子的母性本能。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/032.png" alt="尼多朗♂">
+                <h3>032 尼多朗♂</h3>
+                <p><strong>技能:</strong> 角撞、毒针</p>
+                <p><strong>特点:</strong> 雄性天性好斗。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/033.png" alt="尼多力诺">
+                <h3>033 尼多力诺</h3>
+                <p><strong>技能:</strong> 猛撞、毒击</p>
+                <p><strong>特点:</strong> 额头的角会随着愤怒而变硬。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/034.png" alt="尼多王">
+                <h3>034 尼多王</h3>
+                <p><strong>技能:</strong> 钻孔、百万吨拳</p>
+                <p><strong>特点:</strong> 尾巴粗壮，能够粉碎岩石。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/035.png" alt="皮皮">
+                <h3>035 皮皮</h3>
+                <p><strong>技能:</strong> 摇尾巴、月光</p>
+                <p><strong>特点:</strong> 喜欢仰望夜空。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/036.png" alt="皮可西">
+                <h3>036 皮可西</h3>
+                <p><strong>技能:</strong> 月爆、冲浪</p>
+                <p><strong>特点:</strong> 据说在满月之夜会集体舞蹈。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/037.png" alt="六尾">
+                <h3>037 六尾</h3>
+                <p><strong>技能:</strong> 火花、魅惑之声</p>
+                <p><strong>特点:</strong> 尾巴越多力量越强。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/038.png" alt="九尾">
+                <h3>038 九尾</h3>
+                <p><strong>技能:</strong> 火焰放射、幻术</p>
+                <p><strong>特点:</strong> 尾巴蕴藏着神秘能量。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/039.png" alt="胖丁">
+                <h3>039 胖丁</h3>
+                <p><strong>技能:</strong> 唱歌、滚动</p>
+                <p><strong>特点:</strong> 歌声能让对手沉睡。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/040.png" alt="胖可丁">
+                <h3>040 胖可丁</h3>
+                <p><strong>技能:</strong> 超级音波、影子球</p>
+                <p><strong>特点:</strong> 身体膨胀如气球一般柔软。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/041.png" alt="超音蝠">
+                <h3>041 超音蝠</h3>
+                <p><strong>技能:</strong> 音波、咬住</p>
+                <p><strong>特点:</strong> 在黑暗中依靠声波行动。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/042.png" alt="大嘴蝠">
+                <h3>042 大嘴蝠</h3>
+                <p><strong>技能:</strong> 吸血、十字剪</p>
+                <p><strong>特点:</strong> 喜欢吸取生物的血液。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/043.png" alt="走路草">
+                <h3>043 走路草</h3>
+                <p><strong>技能:</strong> 吸取、芳香疗法</p>
+                <p><strong>特点:</strong> 白天将身体埋在地里休眠。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/044.png" alt="臭臭花">
+                <h3>044 臭臭花</h3>
+                <p><strong>技能:</strong> 甜甜香气、污泥攻击</p>
+                <p><strong>特点:</strong> 身上散发强烈气味。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/045.png" alt="霸王花">
+                <h3>045 霸王花</h3>
+                <p><strong>技能:</strong> 花瓣舞、日光束</p>
+                <p><strong>特点:</strong> 有着华丽花朵的草系宝可梦。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/046.png" alt="派拉斯">
+                <h3>046 派拉斯</h3>
+                <p><strong>技能:</strong> 吸血、孢子</p>
+                <p><strong>特点:</strong> 背上寄生着蘑菇。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/047.png" alt="派拉斯特">
+                <h3>047 派拉斯特</h3>
+                <p><strong>技能:</strong> 十字剪、蘑菇孢子</p>
+                <p><strong>特点:</strong> 蘑菇控制着它的行动。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/048.png" alt="毛球">
+                <h3>048 毛球</h3>
+                <p><strong>技能:</strong> 念力、虫咬</p>
+                <p><strong>特点:</strong> 全身布满细小的绒毛。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/049.png" alt="摩鲁蛾">
+                <h3>049 摩鲁蛾</h3>
+                <p><strong>技能:</strong> 信号光束、毒粉</p>
+                <p><strong>特点:</strong> 会在夜晚飞向亮光。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/050.png" alt="地鼠">
+                <h3>050 地鼠</h3>
+                <p><strong>技能:</strong> 挖洞、泥巴射击</p>
+                <p><strong>特点:</strong> 大部分身体都在地下。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/051.png" alt="三地鼠">
+                <h3>051 三地鼠</h3>
+                <p><strong>技能:</strong> 岩崩、沙暴</p>
+                <p><strong>特点:</strong> 三只地鼠密切合作。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/052.png" alt="喵喵">
+                <h3>052 喵喵</h3>
+                <p><strong>技能:</strong> 抓、暗袭要害</p>
+                <p><strong>特点:</strong> 喜欢闪闪发光的东西。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/053.png" alt="猫老大">
+                <h3>053 猫老大</h3>
+                <p><strong>技能:</strong> 戏法、咬碎</p>
+                <p><strong>特点:</strong> 行动优雅的猫宝可梦。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/054.png" alt="可达鸭">
+                <h3>054 可达鸭</h3>
+                <p><strong>技能:</strong> 水枪、精神强念</p>
+                <p><strong>特点:</strong> 偶尔会出现头痛发作。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/055.png" alt="哥达鸭">
+                <h3>055 哥达鸭</h3>
+                <p><strong>技能:</strong> 水波动、念力</p>
+                <p><strong>特点:</strong> 擅长在水中高速游泳。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/056.png" alt="猴怪">
+                <h3>056 猴怪</h3>
+                <p><strong>技能:</strong> 空手劈、撒娇</p>
+                <p><strong>特点:</strong> 情绪波动剧烈，容易暴走。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/057.png" alt="火暴猴">
+                <h3>057 火暴猴</h3>
+                <p><strong>技能:</strong> 近身战、泰山压顶</p>
+                <p><strong>特点:</strong> 一旦生气就难以冷静。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/058.png" alt="卡蒂狗">
+                <h3>058 卡蒂狗</h3>
+                <p><strong>技能:</strong> 火焰牙、吠叫</p>
+                <p><strong>特点:</strong> 忠诚而勇敢的犬宝可梦。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/059.png" alt="风速狗">
+                <h3>059 风速狗</h3>
+                <p><strong>技能:</strong> 烈焰冲锋、神速</p>
+                <p><strong>特点:</strong> 拥有压倒性的速度。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/060.png" alt="蚊香蝌蚪">
+                <h3>060 蚊香蝌蚪</h3>
+                <p><strong>技能:</strong> 水枪、催眠术</p>
+                <p><strong>特点:</strong> 腹部的螺旋花纹会转动。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/061.png" alt="蚊香君">
+                <h3>061 蚊香君</h3>
+                <p><strong>技能:</strong> 泡沫光线、健美</p>
+                <p><strong>特点:</strong> 喜欢在水边跳舞。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/062.png" alt="蚊香泳士">
+                <h3>062 蚊香泳士</h3>
+                <p><strong>技能:</strong> 冲浪、爆裂拳</p>
+                <p><strong>特点:</strong> 力气大到可以摧毁混凝土。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/063.png" alt="凯西">
+                <h3>063 凯西</h3>
+                <p><strong>技能:</strong> 瞬间移动、念力</p>
+                <p><strong>特点:</strong> 绝大部分时间都在睡觉。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/064.png" alt="勇吉拉">
+                <h3>064 勇吉拉</h3>
+                <p><strong>技能:</strong> 催眠术、精神利刃</p>
+                <p><strong>特点:</strong> 手中的勺子散发神秘力量。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/065.png" alt="胡地">
+                <h3>065 胡地</h3>
+                <p><strong>技能:</strong> 精神强念、影子球</p>
+                <p><strong>特点:</strong> 据说智商高达5000。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/066.png" alt="腕力">
+                <h3>066 腕力</h3>
+                <p><strong>技能:</strong> 空手劈、岩石封锁</p>
+                <p><strong>特点:</strong> 四肢肌肉发达。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/067.png" alt="豪力">
+                <h3>067 豪力</h3>
+                <p><strong>技能:</strong> 二连踢、爆裂拳</p>
+                <p><strong>特点:</strong> 戴着力量抑制带。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/068.png" alt="怪力">
+                <h3>068 怪力</h3>
+                <p><strong>技能:</strong> 十字劈、地狱翻摔</p>
+                <p><strong>特点:</strong> 四只手臂可以同时进行拳击。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/069.png" alt="喇叭芽">
+                <h3>069 喇叭芽</h3>
+                <p><strong>技能:</strong> 藤鞭、溶解液</p>
+                <p><strong>特点:</strong> 嘴部像喇叭一样张开。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/070.png" alt="口呆花">
+                <h3>070 口呆花</h3>
+                <p><strong>技能:</strong> 飞叶快刀、毒粉</p>
+                <p><strong>特点:</strong> 会用甜味诱捕猎物。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/071.png" alt="大食花">
+                <h3>071 大食花</h3>
+                <p><strong>技能:</strong> 飞叶风暴、吞食</p>
+                <p><strong>特点:</strong> 能一口吞下大型猎物。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/072.png" alt="玛瑙水母">
+                <h3>072 玛瑙水母</h3>
+                <p><strong>技能:</strong> 泡沫光线、剧毒</p>
+                <p><strong>特点:</strong> 漂浮在海中的水母宝可梦。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/073.png" alt="毒刺水母">
+                <h3>073 毒刺水母</h3>
+                <p><strong>技能:</strong> 水炮、尖刺加农炮</p>
+                <p><strong>特点:</strong> 头上的水晶拥有强大能量。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/074.png" alt="小拳石">
+                <h3>074 小拳石</h3>
+                <p><strong>技能:</strong> 落石、滚动</p>
+                <p><strong>特点:</strong> 身躯坚硬如岩石。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/075.png" alt="隆隆石">
+                <h3>075 隆隆石</h3>
+                <p><strong>技能:</strong> 岩石爆击、自爆</p>
+                <p><strong>特点:</strong> 喜欢在山坡上滚动。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/076.png" alt="隆隆岩">
+                <h3>076 隆隆岩</h3>
+                <p><strong>技能:</strong> 重磅冲撞、地震</p>
+                <p><strong>特点:</strong> 体内蕴含熔岩般的能量。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/077.png" alt="小火马">
+                <h3>077 小火马</h3>
+                <p><strong>技能:</strong> 火花、二连踢</p>
+                <p><strong>特点:</strong> 鬃毛燃烧着火焰。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/078.png" alt="烈焰马">
+                <h3>078 烈焰马</h3>
+                <p><strong>技能:</strong> 火焰充斥、冲钻</p>
+                <p><strong>特点:</strong> 跑步速度如同风一般迅捷。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/079.png" alt="呆呆兽">
+                <h3>079 呆呆兽</h3>
+                <p><strong>技能:</strong> 摇尾巴、冲浪</p>
+                <p><strong>特点:</strong> 尾巴被咬住后性格会变得迟钝。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/080.png" alt="呆壳兽">
+                <h3>080 呆壳兽</h3>
+                <p><strong>技能:</strong> 念力、贝壳夹击</p>
+                <p><strong>特点:</strong> 拥有贝壳伙伴共生的形态。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/081.png" alt="小磁怪">
+                <h3>081 小磁怪</h3>
+                <p><strong>技能:</strong> 电波、磁场控制</p>
+                <p><strong>特点:</strong> 漂浮在空中，三只组合。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/082.png" alt="三合一磁怪">
+                <h3>082 三合一磁怪</h3>
+                <p><strong>技能:</strong> 放电、磁铁炸弹</p>
+                <p><strong>特点:</strong> 产生强力磁场攻击对手。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/083.png" alt="大葱鸭">
+                <h3>083 大葱鸭</h3>
+                <p><strong>技能:</strong> 挥舞大葱、飞叶快刀</p>
+                <p><strong>特点:</strong> 携带着大葱战斗。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/084.png" alt="嘟嘟">
+                <h3>084 嘟嘟</h3>
+                <p><strong>技能:</strong> 啄、二连踢</p>
+                <p><strong>特点:</strong> 拥有两个头的鸟宝可梦。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/085.png" alt="嘟嘟利">
+                <h3>085 嘟嘟利</h3>
+                <p><strong>技能:</strong> 三重攻击、飞踢</p>
+                <p><strong>特点:</strong> 进化后长出第三个头。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/086.png" alt="小海狮">
+                <h3>086 小海狮</h3>
+                <p><strong>技能:</strong> 冰冻之风、头锤</p>
+                <p><strong>特点:</strong> 鳍状肢让它在水中游刃有余。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/087.png" alt="白海狮">
+                <h3>087 白海狮</h3>
+                <p><strong>技能:</strong> 冰冻光束、冲浪</p>
+                <p><strong>特点:</strong> 皮下脂肪厚，在寒冷海域生活。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/088.png" alt="臭泥">
+                <h3>088 臭泥</h3>
+                <p><strong>技能:</strong> 污泥攻击、溶化</p>
+                <p><strong>特点:</strong> 由工业废弃物形成。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/089.png" alt="臭臭泥">
+                <h3>089 臭臭泥</h3>
+                <p><strong>技能:</strong> 污泥炸弹、影子拳</p>
+                <p><strong>特点:</strong> 身上散发着恶臭。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/090.png" alt="大舌贝">
+                <h3>090 大舌贝</h3>
+                <p><strong>技能:</strong> 冰冻之风、夹住</p>
+                <p><strong>特点:</strong> 舌头长而发达。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/091.png" alt="刺甲贝">
+                <h3>091 刺甲贝</h3>
+                <p><strong>技能:</strong> 冰锥、岩石炮</p>
+                <p><strong>特点:</strong> 坚硬的外壳几乎无法破坏。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/092.png" alt="鬼斯">
+                <h3>092 鬼斯</h3>
+                <p><strong>技能:</strong> 暗影球、舌舔</p>
+                <p><strong>特点:</strong> 能穿墙的幽灵。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/093.png" alt="鬼斯通">
+                <h3>093 鬼斯通</h3>
+                <p><strong>技能:</strong> 恶之波动、诅咒</p>
+                <p><strong>特点:</strong> 常常吐出毒气吓人。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/094.png" alt="耿鬼">
+                <h3>094 耿鬼</h3>
+                <p><strong>技能:</strong> 暗影拳、黑夜魔影</p>
+                <p><strong>特点:</strong> 潜藏在阴影中捉弄人类。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/095.png" alt="大岩蛇">
+                <h3>095 大岩蛇</h3>
+                <p><strong>技能:</strong> 石尾、地震</p>
+                <p><strong>特点:</strong> 由巨石堆积而成的身体。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/096.png" alt="催眠貘">
+                <h3>096 催眠貘</h3>
+                <p><strong>技能:</strong> 催眠术、精神冲击</p>
+                <p><strong>特点:</strong> 喜欢吸食梦境。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/097.png" alt="引梦貘人">
+                <h3>097 引梦貘人</h3>
+                <p><strong>技能:</strong> 精神波、影子球</p>
+                <p><strong>特点:</strong> 长鼻子能摆动催眠对手。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/098.png" alt="大钳蟹">
+                <h3>098 大钳蟹</h3>
+                <p><strong>技能:</strong> 泡沫、抓</p>
+                <p><strong>特点:</strong> 巨大的钳子力量惊人。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/099.png" alt="巨钳蟹">
+                <h3>099 巨钳蟹</h3>
+                <p><strong>技能:</strong> 蟹钳锤、泡沫光线</p>
+                <p><strong>特点:</strong> 右钳远比左钳巨大。</p>
+            </div>
+            <div class="pokemon-card">
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/100.png" alt="雷电球">
+                <h3>100 雷电球</h3>
+                <p><strong>技能:</strong> 电光、滚动</p>
+                <p><strong>特点:</strong> 外形酷似精灵球，会自爆。</p>
+            </div>
+
         </div>
     </main>
+    <footer>
+        <p><a href="index.html">返回首页</a></p>
+    </footer>
 </body>
 </html>
