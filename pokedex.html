@@ -37,6 +37,11 @@
             margin: 10px;
             padding: 20px;
             width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+        .pokemon-card:hover {
+            transform: scale(1.05);
         }
         .pokemon-card img {
             width: 120px;
@@ -47,6 +52,11 @@
         .pokemon-card p {
             margin: 5px 0;
             font-size: 14px;
+        }
+        footer {
+            background-color: #ee1515;
+            color: #fff;
+            padding: 10px;
         }
     </style>
 </head>
@@ -659,5 +669,8 @@
 
         </div>
     </main>
+    <footer>
+        <p><a href="index.html">返回首页</a></p>
+    </footer>
 </body>
 </html>
