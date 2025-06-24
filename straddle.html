@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Straddle 盈利曲线</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #000;
+            color: #33FF33;
+            font-family: "Courier New", Courier, monospace;
+            padding: 20px;
+        }
+        label, input, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input {
+            width: 200px;
+            background-color: #111;
+            color: #33FF33;
+            border: 1px solid #333;
+            padding: 5px;
+        }
+        button {
+            background-color: #222;
+            color: #33FF33;
+            border: 1px solid #333;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #333;
+        }
+        canvas {
+            background-color: #111;
+            border: 1px solid #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Straddle 盈利计算</h1>
+    <p>本示例计算买入同一执行价看涨和看跌期权的straddle策略。盈利 = max(S-K,0) - C + max(K-S,0) - P - Fee</p>
+    <label>执行价格：<input id="strike" type="number" value="100"></label>
+    <label>看涨期权价格：<input id="call" type="number" value="5"></label>
+    <label>看跌期权价格：<input id="put" type="number" value="5"></label>
+    <label>交易费用：<input id="fee" type="number" value="0"></label>
+    <button id="calculate">计算</button>
+    <canvas id="chart" width="600" height="400"></canvas>
+    <script>
+    let chart;
+    function compute() {
+        const strike = parseFloat(document.getElementById('strike').value);
+        const call = parseFloat(document.getElementById('call').value);
+        const put = parseFloat(document.getElementById('put').value);
+        const fee = parseFloat(document.getElementById('fee').value);
+        const prices = [];
+        const profits = [];
+        const maxPrice = strike * 2;
+        for (let i = 0; i <= 40; i++) {
+            const price = i * maxPrice / 40;
+            const callPayoff = Math.max(price - strike, 0);
+            const putPayoff = Math.max(strike - price, 0);
+            const profit = callPayoff + putPayoff - call - put - fee;
+            prices.push(price.toFixed(2));
+            profits.push(profit.toFixed(2));
+        }
+        if (!chart) {
+            const ctx = document.getElementById('chart').getContext('2d');
+            chart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: prices,
+                    datasets: [{
+                        label: 'Profit',
+                        data: profits,
+                        borderColor: '#00FF99',
+                        fill: false,
+                        tension: 0
+                    }]
+                },
+                options: {
+                    scales: {
+                        x: { title: { display: true, text: 'Stock Price' } },
+                        y: { title: { display: true, text: 'Profit' } }
+                    }
+                }
+            });
+        } else {
+            chart.data.labels = prices;
+            chart.data.datasets[0].data = profits;
+            chart.update();
+        }
+    }
+    document.getElementById('calculate').addEventListener('click', compute);
+    compute();
+    </script>
+</body>
+</html>
