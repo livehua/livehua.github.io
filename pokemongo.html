@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>宝可梦GO游戏</title>
+    <style>
+        body {
+            background: radial-gradient(circle at center, #78C850, #3b4cca);
+            color: #fff;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            margin: 0;
+        }
+        header {
+            background-color: #ee1515;
+            padding: 20px;
+        }
+        #game-area {
+            position: relative;
+            height: 70vh;
+            margin: 20px;
+            border: 3px dashed #fff;
+            overflow: hidden;
+        }
+        .pokemon {
+            position: absolute;
+            width: 80px;
+            cursor: pointer;
+        }
+        button {
+            font-family: 'Press Start 2P', cursive;
+            padding: 10px 20px;
+            margin: 10px;
+            background: #ffcb05;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>宝可梦GO游戏</h1>
+    </header>
+    <main>
+        <p>点击出现的宝可梦来捕捉它们！</p>
+        <div id="game-area"></div>
+        <p>已捕捉: <span id="score">0</span></p>
+        <button id="start">开始游戏</button>
+    </main>
+    <footer>
+        <p><a href="index.html">返回首页</a></p>
+    </footer>
+    <script src="pokedex_data.js"></script>
+    <script>
+        let score = 0;
+        let spawnInterval;
+        const area = document.getElementById('game-area');
+        const scoreSpan = document.getElementById('score');
+        document.getElementById('start').addEventListener('click', startGame);
+
+        function startGame() {
+            score = 0;
+            scoreSpan.textContent = score;
+            clearInterval(spawnInterval);
+            area.innerHTML = '';
+            spawnInterval = setInterval(spawnPokemon, 1000);
+        }
+
+        function spawnPokemon() {
+            const p = pokemons[Math.floor(Math.random() * pokemons.length)];
+            const img = document.createElement('img');
+            img.src = `https://assets.pokemon.com/assets/cms2/img/pokedex/full/${p.num}.png`;
+            img.alt = p.name;
+            img.className = 'pokemon';
+            img.style.left = Math.random() * (area.clientWidth - 80) + 'px';
+            img.style.top = Math.random() * (area.clientHeight - 80) + 'px';
+            img.addEventListener('click', () => {
+                score++;
+                scoreSpan.textContent = score;
+                img.remove();
+            });
+            setTimeout(() => img.remove(), 3000);
+            area.appendChild(img);
+        }
+    </script>
+</body>
+</html>
